@@ -1,13 +1,366 @@
+* {
+	box-sizing: border-box;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	font-family: 'PT Sans', sans-serif;
+	margin: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+  background-color: black;
+  height: 90px;
+}
+
+.header {
+  width: 1170px;
+  margin: auto;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > ul {
+  display: flex;
+  color: #fff;
+  list-style: none;
+}
+
+nav > ul > li {
+  margin-right: 20px;
+  cursor: pointer;
+}
+.title-cards {
+  width: 1170px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.title-big-card {
+  width: 380px;
+  height: 545px;
+  background-image: url("./assets/mers.png");
+  background-size: cover;
+  color: #fff;
+  border-radius: 5px;
+}
+.button {
+  width: 62px;
+	height: 22px;
+  padding: 2px 10px;
+	background-color: #4A90E2;
+	font-size: 12px;
+	color: #fff;
+	border-radius: 2px;
+	cursor: pointer;
+  position: relative;
+  top: 15px;
+  left: 15px;
+}
+
+.card-text {
+  width: 370px;
+  position: relative;
+  top: 400px;
+  left: 12px;
+  font-size: 15px;
+}
+.title-mini-cards {
+  width: 760px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.title-mini-cards > div {
+  width: 370px;
+	height: 265px;
+	border-radius: 5px;
+  color: #fff;
+}
+.title-mini-cards > div > .card-text {
+  width: 350px;
+  position: relative;
+  top: 145px;
+  left: 15px;
+  font-size: 12px;
+}
+.mini-card1 {
+  background-image: url("./assets/mers3.png");
+}
+.mini-card2 {
+  background-image: url("./assets/audi.png");
+}
+.mini-card3 {
+  background-image: url("./assets//audi2.png");
+}
+.mini-card4 {
+  background-image: url("./assets/old.png");
+}
+
+main {
+  width: 1170px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  width: 770px;
+}
+aside {
+  width: 270px;
+}
+.slide-text {
+  width: 730px;
+  background-color: #fff;
+  padding: 5px 30px;
+  color: #666666;
+  position: relative;
+  top: -130px;
+  left: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 7px 6px;
+}
+.slide-text > h1 {
+  font-size: 25px;
+  color: black;
+}
+.slide-text > p {
+  font-size: 14px;
+}
+.slide-text > i {
+  font-size: 14px;
+}
+.slide1 {
+  width: 770px;
+  height: 440px;
+  background-image: url("./assets/Bitmap.png");
+}
+.slide2 {
+  width: 770px;
+  height: 440px;
+  background-image: url("./assets/bmw.png");
+}
+.slide3 {
+  width: 770px;
+  height: 440px;
+  background-image: url("./assets/mclaren.png");
+}
+.slide4 {
+  width: 770px;
+  height: 440px;
+  background-image: url("./assets/schevrolet.png");
+}
+.slide5 {
+  width: 770px;
+  height: 440px;
+  background-image: url("./assets/jeep.png");
+}
+
+.pagination {
+  width: 340px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+.pagination > div {
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  padding: 10px 0 0 15px;
+  cursor: pointer;
+  border: 1px solid #E5E5E5;
+}
+.black {
+  color: #fff;
+  background-color: black;
+}
+.leon > h3 {
+  font-size: 18px;
+}
+.leon > i {
+  font-size: 14px;
+  color: #999999;
+}
+.leon > p {
+  font-size: 15px;
+  color: #666666;
+}
+.long-button {
+  width: 270px;
+  height: 50px;
+  background-color: #232323;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.long-button:hover {
+  background-color: #4A90E2;
+  color: #fff;
+}
+
+.sidebar > div {
+  width: 270px;
+  height: 195px;
+  margin-top: 40px;
+}
+.image-1 {
+  background-image: url("./assets/side1.png");
+}
+.image-2 {
+  background-image: url("./assets/side\ 2.png");
+}
+.image-3 {
+  background-image: url("./assets/side\ 3.png");
+}
+.side-section {
+  width: 270px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.side-section > img {
+  margin-top: 10px;
+}
+.instagram > .long-button {
+  margin-top: 15px;
+}
+.tags {
+  width: 270px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  color: #171717;
+}
+.tags > div {
+  height: 30px;
+  background-color: #EBEBEB;
+  border-radius: 2px;
+  padding: 5px 10px;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+.email > h3 {
+  font-size: 18px;
+  color: #171717;
+}
+.email > p {
+  font-size: 14px;
+  color: #666666;
+}
+
+.adress {
+  width: 270px;
+  height: 50px;
+  color: #AEB3BB;
+  padding: 10px 0 0 15px;
+  margin: 15px 0 15px 0;
+  border-radius: 5px;
+  border: 1px solid #E5E5E5;
+}
+
+.popular {
+  width: 1170px;
+  margin: 50px auto;
+}
+
+.bmw {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bmw > div {
+  width: 270px;
+  height: 195px;
+}
+.bmw1 {
+  background-image: url("./assets/BMW\ 1.png");
+}
+.bmw2 {
+  background-image: url("./assets/bmw\ 2.png");
+}
+.bmw3 {
+  background-image: url("./assets/bmw-3.png");
+}
+.bmw4 {
+  background-image: url("./assets/bmw\ 4.png");
+}
+
+.black-slide {
+  background-color: #171717;
+}
+.sectors {
+  width: 1170px;
+  margin: auto;
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sector-1, .sector-2 > b {
+  font-size: 20px;
+  color: #fff;
+}
+.sector-1 {
+  width: 270px;
+}
+.sector-1 > p {
+  font-size: 14px;
+  color: #CECECE;
+}
+.sector-1 > div {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sector-2 {
+  width: 295px;
+  margin-bottom: 20px;
+}
+.sec-2 {
+  width: 295px;
+  display: flex;
+  height: 95px;
+  margin-top: 20px;
+}
+.sec-2 > div {
+  margin-top: -10px;
+}
+.sec-2 > div {
+  margin-top: -10px;
+}
+.sec-2 > div > h4 {
+  color: #fff;
+  font-size: 15px;
+}
+.sec-2 > div > i {
+  color: #CECECE;
+  font-size: 14px;
+}
+.sector-3 > .email > .adress {
+  background-color: #373737;
+  border: none;
+}
+.sector-3 > .email > h3 {
+  font-size: 20px;
+  color: #fff;
+}
+footer {
+  background-color: black;
+}
+
+.footer {
+  width: 1170px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 14px;
+  padding: 20px 0 20px 0;
 }
